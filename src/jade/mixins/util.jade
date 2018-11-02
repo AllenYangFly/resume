@@ -82,7 +82,7 @@ mixin experience_title_job(item)
   time.experience-time #{item.start} ~ #{item.end}
 
 mixin experience_content_job(item)
-  dt.experience-position= item.name + experience_type[item.type]
+  dt.experience-position= item.name
   each desc in item.description
     dd.experience-task!= highlight(desc)
 
